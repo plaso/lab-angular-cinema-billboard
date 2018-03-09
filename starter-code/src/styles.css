@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+.app-body {
+  padding: 20px 0;
+}
+
+.app-container {
+  min-height: 100vh;
+  border-radius: 20px;
+}
+
+.app-wrapper {
+  padding: 40px;
+}
+
+.app-title {
+  margin-top: 0;
+}
+
+.movie-img {
+  border-radius: 10px;
+}
+
+.btn-details {
+  display: block;
+  margin-top: 20px;
+}
