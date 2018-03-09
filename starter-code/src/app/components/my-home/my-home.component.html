@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col s12 m6 l3" *ngFor="let movie of movies, let i = index">
-    <h4 class="center-align">Room {{ i + 1 }}</h4>
+    <h5 class="center-align">ROOM {{ i + 1 }}</h5>
     <img class="z-depth-3 hoverable responsive-img movie-img" [src]="movie.poster">
     <h6 class="center-align">{{ movie.title }}</h6>
-    <a [routerLink]="['/movie', movie.id]" class="waves-effect waves-light btn blue accent-3 center-align btn-details">See details</a>
+    <a [routerLink]="['/movie', movie.id]" class="hoverable btn blue accent-3 center-align btn-details">See details</a>
   </div>
 </div>

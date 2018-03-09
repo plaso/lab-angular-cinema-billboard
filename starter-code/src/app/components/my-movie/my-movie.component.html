@@ -1,3 +1,37 @@
-<p>
-  my-movie works!
-</p>
+<div class="container">
+  <h5>Room {{ movie.id }}</h5><h4>{{ movie.title }}</h4>
+  <div class="row">
+    <div class="col s12 m6">
+      <img [src]="movie.poster" class="responsive-img movie-img z-depth-2 hoverable">
+    </div>
+    <div class="col s12 m6 movie-info">
+      <div class="row">
+        <div class="col s3"><b>Genres</b></div>
+        <div class="col s9">
+          <div *ngFor="let genre of movie.genres">
+            {{ genre }}
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s3"><b>Year</b></div>
+        <div class="col s9">{{ movie.year }}</div>
+      </div>
+      <div class="row">
+        <div class="col s3"><b>Director</b></div>
+        <div class="col s9">{{ movie.director }}</div>
+      </div>
+      <div class="row">
+        <div class="col s3"><b>Actors</b></div>
+        <div class="col s9">
+          <div *ngFor="let actor of movie.actors">
+            {{ actor }}
+          </div>
+        </div>
+      </div>
+      <div><b>Synopsis</b></div>
+      <div>{{ movie.synopsis }}</div>
+      <a [routerLink]="['/home']" class="hoverable btn blue accent-3 center-align btn-details">Back to home</a>
+    </div>
+  </div>
+</div>
